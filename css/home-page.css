@@ -3,12 +3,9 @@ body{
 }
 
 img{
-    position: absolute;
-    display: flex;
-    top:-20%;
-    right:44%;
-    width: 75%;
-    height: 75%;
+    position: relative;
+   left: 0;
+   right: 44%;
 
 }
 nav{
@@ -58,3 +55,23 @@ p{
     height: 50%;
     border-radius: 50%;
 }
+#img{
+    padding: 20px;
+    height: 15%;
+    width: 15%;
+    top: 40%;
+    left: 60%;
+    position: absolute;
+    border-radius: 40px;}    
+
+#ft{
+    
+    position: absolute;
+    display: flex;
+    top: 80%;
+    width: 99%;
+    height: 10%;
+   justify-content: center;
+   font: size 25px;
+}
+
