@@ -18,6 +18,7 @@ nav{
     justify-content: flex-start;
     font-size: 25px;
     padding:20px;
+    gap: 10px;
     
 }
 @media screen and (max-width: 768px) {
@@ -29,7 +30,7 @@ nav{
     }
     nav{
         top: 15%;
-        left: 35%;
+        left: 30%;
     }
     nav {
         font-size: 20px;
@@ -67,9 +68,8 @@ nav{
     padding: 20px;
     width: 300px;
 }
-.image img{
-    border-radius: 10px;
-}
+
+
 p{
     text-align: center;
 }
@@ -79,4 +79,30 @@ p{
     align-items: center;
     gap: 20px;
     height: 30px;
+}
+input{
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    top: 50%;
+}
+
+
+ #ft{
+    color: blue;
+   position: absolute;
+   display: flex;
+    top: 115%;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+  text-align: center;
+    font-size: 25px;
+ }
+ 
+nav a{
+    text-decoration: none;
+    color: black;
 }
