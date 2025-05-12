@@ -1,0 +1,77 @@
+body{
+    background-image: linear-gradient(to right, rgb(202, 194, 194), rgb(145, 142, 142));
+}
+
+img{
+    position: relative;
+   left: 0;
+   right: 44%;
+
+}
+nav{
+    position: absolute;
+    top: 15%;
+    left: 39%;
+    width: 10px;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    padding:20px;
+    
+}
+@media screen and (max-width: 768px) {
+    img{
+        top:-10%;
+        right:40%;
+        width: 80%;
+        height: 80%;
+    }
+    nav{
+        top: 15%;
+        left: 35%;
+    }
+    nav {
+        font-size: 20px;
+    }
+    
+}
+p{
+    position: absolute;
+    top: 30%;
+    right: 35%;
+    font-size: 20px;
+    color: black;
+    
+    width: 50%;
+    height: 50%;
+}
+#img{
+    position: absolute;
+    display: flex;
+    top: 40%;
+    left: 70%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+#img{
+    padding: 20px;
+    height: 15%;
+    width: 15%;
+    top: 40%;
+    left: 60%;
+    position: absolute;
+    border-radius: 40px;}    
+
+#ft{
+    
+    position: absolute;
+    display: flex;
+    top: 80%;
+    width: 99%;
+    height: 10%;
+   justify-content: center;
+   font: size 25px;
+}
+
