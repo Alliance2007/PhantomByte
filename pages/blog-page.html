@@ -5,35 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/blog-page.css">
-    <style> 
-    .nav{
-            margin-left: 900px;
-            position:fixed;
-            top: 150px;
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-        body{
-            font-family: 'Roboto', sans-serif;
-            background-color: #706868;
-        }
-        .master{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .container{
-            background-color: rgb(95, 87, 87);
-            border-radius: 10px;
-            box-shadow:0  4px 8px rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            width: 300px;
-        }
-        .image img{
-            border-radius: 10px;
-        }
+    <style>
         </style>
 </head>
 <body>
@@ -57,14 +29,27 @@
     <label>
         <SEARCh>
             <input type="text"id="search" placeholder="Search...">
-            <button @click="search">
+            <button @click="SEARCH">
                 <a href="home-page.html">SEARCH</a>
     </SEARCh>  
-    <button @click="add post">
-    </button>
-</label>  
-</div>
+        </label>
+        <option>
+            <label>
+                <option>
+                    <select name="search file"placeholder="Search file">
+                        <a href="go to internal storege">
+                            <i framework="fa fa-search">
+                                <i class="fa fa-search">
+                                    add post
+                                </i>
+                            </i>
+                        </a>
 
+                    </select>
+                </option>
+                
+            </label>
+        </option>
 
   <div id="ft">
     <footer>
