@@ -100,3 +100,14 @@ nav a{
     font-size: 25px;
     padding: 10px;
 }
+#b{
+    position: absolute;
+    left: 90%;
+    top:95%;
+
+}
+#footer{
+ 
+    text-align: center;
+    top: 98%;
+}
