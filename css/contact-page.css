@@ -91,7 +91,7 @@ input{
 
 
  #ft{
-    color: blue;
+    color:black;
    position: absolute;
    display: flex;
     top: 115%;
@@ -112,3 +112,87 @@ nav a{
     top:95%;
 
 }
+#tel{
+    position: absolute;
+    right: 70%;
+    top:75%;
+}
+.header {
+    margin-top: -50px;
+}
+
+.header nav {
+       display: flex;
+       justify-content: space-between;
+         align-items: center;
+         gap: 30px;
+         margin-top: -50px;
+}
+.header nav a {
+    font-family:  monospace;
+    font-size: 20px;
+    color: black;
+}
+.header nav a:hover {
+    color: white;
+    text-decoration: overline;
+}
+.header nav a.active {
+    color: blue;
+}
+.header nav img {
+    width: 50px;
+    height: 50px;
+}
+
+/* form style */
+
+#container3{
+  
+    width: 50%;
+    height: 50%;
+    background-color: rgb(95, 87, 87);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 50px 30px;
+    margin-left: 400px;
+    margin-top: -50px;
+    border-radius: 50px;
+    margin-bottom: 100px;
+   
+}
+    
+#container3 .input-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+}
+
+#container3 .input-data input {
+    width: 70%;
+    padding: 10px 2px;
+    border-radius: 8px;
+    font-size: 16px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 150px;
+}
+
+  .button a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 250px;
+}
+/* footer  css */
+
+
