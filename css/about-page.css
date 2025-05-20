@@ -1,7 +1,8 @@
-        body{
+   body{
     background-image: linear-gradient(to right, rgb(202, 194, 194), rgb(145, 142, 142));
 
 }
+
 img{
     position: absolute;
     display: flex;
@@ -21,6 +22,7 @@ nav{
     justify-content: flex-start;
     font-size: 25px;
     padding:20px;
+    gap: 10px;
 
         .nav{
             margin-left: 900px;
@@ -81,4 +83,60 @@ nav{
         .image img{
             border-radius: 10px;
         }
+        #ft{
+            color: blue;
+            position: absolute;
+            display: flex;
+            top: 90%;
+            width: 100%;
+            height: 10%;
+            justify-content: center;
+            font-size: 25px;
+            text-align: center;
+        }
     
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
+#b{
+    position: absolute;
+    left: 90%;
+    top:95%;
+
+}
+#footer{
+ 
+    text-align: center;
+    top: 98%;
+}
+
+.header {
+    margin-top: -50px;
+}
+
+.header nav {
+       display: flex;
+       justify-content: space-between;
+         align-items: center;
+         gap: 30px;
+         margin-top: -50px;
+}
+.header nav a {
+    font-family:  monospace;
+    font-size: 20px;
+    color: black;
+}
+.header nav a:hover {
+    color: white;
+    text-decoration: overline;
+}
+.header nav a.active {
+    color: blue;
+}
+.header nav img {
+    width: 50px;
+    height: 50px;
+}

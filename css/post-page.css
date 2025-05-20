@@ -1,0 +1,15 @@
+body{
+    background-image: linear-gradient(to right, rgb(202, 194, 194), rgb(145, 142, 142));
+    
+}
+.post-container{
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+#postForm{
+    position: absolute;
+    text-decoration: dashed;
+}

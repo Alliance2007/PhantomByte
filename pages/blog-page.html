@@ -5,36 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/blog-page.css">
-    <style> 
-    .nav{
-            margin-left: 900px;
-            position:fixed;
-            top: 150px;
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-        body{
-            font-family: 'Roboto', sans-serif;
-            background-color: #706868;
-        }
-        .master{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .container{
-            background-color: rgb(95, 87, 87);
-            border-radius: 10px;
-            box-shadow:0  4px 8px rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            width: 300px;
-        }
-        .image img{
-            border-radius: 10px;
-        }
-        </style>
+    
 </head>
 <body>
     <div id="header">
@@ -54,16 +25,67 @@
   </nav>
 </div>
 
-  <div id="ft">
+<div id="srch">
+
+        <SEARCh>
+            <input type="text"id="search" placeholder="Search...">
+            <button @click="SEARCH">
+                <a href="home-page.html">UPDDATE</a>
+    </SEARCh>  
+    
+</div>
+
+    <div id="post">
+        
+        <!-- <input type="text" id="post" placeholder="Write a post..."> -->
+        <button @click="post">
+            <a href="../pages/post-page.html">post</a>
+        </button>
+    </div>
+    <div class="m1">
+        <img src="../assets/picture/CD.jpg" alt="hello" x="20" y="20" height="300px" width="300px" />
+    </div>
+    
+  <div id="ft"></div>
     <footer>
         <p><strong>&COPY; FOR BLOG PAGE IN 2025</strong></p>
     
  </footer>
 </label>
+ 
 
-<label>
-  <button><a href="home-page.html">BACK</a></button>
-</label>
 
+
+<script>
+document.getElementById('postbtn').addEventListener('click', function() {
+    const postInput = document.getElementById('post');
+    if (!postInput.value.trim()) {
+        alert('Please write something before posting.');
+        postInput.focus();
+        return false;
+    }
+    // Add your post submission logic here
+});
+
+document.querySelector('.m2 button').addEventListener('click', function() {
+    const messageInput = document.getElementById('message');
+    if (!messageInput.value.trim()) {
+        alert('Please enter a comment before publishing.');
+        messageInput.focus();
+        return false;
+    }
+    // comment submission logic here
+});
+
+document.getElementById('search').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') 
+        if (!this.value.trim()) {
+            alert('Please enter a search term.');
+            e.preventDefault();
+        }
+    
+});
+
+</script>
 </body>
 </html>
