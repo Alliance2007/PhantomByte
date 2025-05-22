@@ -1,26 +1,115 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/post-page.css">
+  <meta charset="UTF-8">
+  <title>Comments</title>
+  <link rel="stylesheet" href="../css/post-page.css">
 </head>
 <body>
+ <div id="header">
+    <img src="../assets/images/log.svg" alt="hello" x="20" y="20" height="300px" width="300px" />
+               
+    <nav>
+                            
+        <a href="home-page.html">Home</a>
+        <a href="abaut-page.html">About</a>
+        <a href="contact-page.html">Contact</a>
+        <a href="login-page.html">Login</a>
+        <a href="register-page.html">Register</a>
+        <a href="skills-page.html">Skills</a>
+        <a href="blog-page.html">Blogs</a>
+
     
+  </nav>
   
-  <div class="post-container">
-    <h2>Create a Post</h2>
-    <form id="postForm">
-      <textarea id="postContent" placeholder="Write your post here..." required></textarea>
-      <button type="submit">Post</button>
+  <div class="comment-box">
+    <h2>Leave a Comment</h2>
+    <div class="comm"></div>
+    <form id="commentForm">
+      <input type="text" id="name" placeholder="Your name" required>
+      <textarea id="comment" placeholder="Your comment..." required></textarea>
+    <div class="post">
+      <button type="submit" >Post Comment</button>
+
+    </div>  
     </form>
-    <div id="postsList">
-        </div>
+
+    <div id="commentsList">
+   
+    </div>
+  </div>
+  <div class="ft">
+    <p><strong>&copy</strong>right for blog page</p>
+  </div>
+
+ <script>
+    document.getElementById('commentForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const comment = document.getElementById('comment').value.trim();
+  const commentsList = document.getElementById('commentsList');
+
+  if (name && comment) {
+
+    const commentDiv = document.createElement('div');
+    commentDiv.className = 'commente';
+    commentDiv.innerHTML = `<strong>${name}</strong><p>${comment} <button onclick=deleteitem()>delete</button></p>`;
+
+    
+    commentsList.prepend(commentDiv);
+
+    
+    const savedComments = JSON.parse(localStorage.getItem('comments')) || [];
+    savedComments.push({ name, comment });
+    localStorage.setItem('comments', JSON.stringify(savedComments));
+
+    
+    document.getElementById('commentForm').reset();
+  }
+ 
+ 
+});
+function deleteitem(event) {
+    
+    const btn = event.target;
+    const commentDiv = btn.closest('.commente');
+    if (commentDiv) {
+    
+        commentDiv.remove();
+
+        
+        const name = commentDiv.querySelector('strong').textContent;
+        const comment = commentDiv.querySelector('p').childNodes[0].textContent.trim();
+        let savedComments = JSON.parse(localStorage.getItem('comments')) || [];
+        savedComments = savedComments.filter(
+            c => !(c.name === name && c.comment === comment)
+        );
+        localStorage.setItem('comments', JSON.stringify(savedComments));
+    }
+}
 
 
-<script src="../script/post-page.js">
+document.getElementById('commentsList').addEventListener('click', function(e) {
+    if (e.target.tagName === 'BUTTON' && e.target.textContent === 'delete') {
+        deleteitem(e);
+    }
+});
 
-</script>
+
+window.addEventListener('DOMContentLoaded', () => {
+  const savedComments = JSON.parse(localStorage.getItem('comments')) || [];
+  const commentsList = document.getElementById('commentsList');
+
+  savedComments.reverse().forEach(comment => {
+    const commentDiv = document.createElement('div');
+    commentDiv.className = 'comment';
+    commentDiv.innerHTML = `<strong>${comment.name}</strong><p>${comment.comment}</p>`;
+    commentsList.appendChild(commentDiv);
+  });
+});
+
+ </script>
 </body>
 </html>
