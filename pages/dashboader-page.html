@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/dashboader-page.css">   
+</head>
+<body>
+    <button id="menuToggle">
+        <img src="../assets/picture/th-menu-128.webp">
+    </button>
+    <div class="ct">
+      
+            
+            <nav class="dashboard-menu">
+                
+                <ul>
+                    <li><a href="home-page.html">Home</a></li>
+                    <li><a href="login-page.html">login</a></li>
+                    <li><a href="post-page.html">post</a></li>
+                    <li><a href="register-page.html">Register</a></li>
+                    <li><a href="skills-page.html">Skills</a></li>
+                    <li><a href="abaut-page.html">About</a></li>
+                    <li><a href="blog-page.html">Blog</a></li>
+                    <li><a href="comment-page.html">Comment</a></li>
+                    <li><a href="contact-page.html">Contact</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="span2"></div>
+        <div class="span3"></div>
+        <div class="span4"></div>
+ 
+
+
+    </div>
+     <script>
+        const menuButton = document.getElementById('menuToggle');
+        const menu = document.querySelector('.dashboard-menu');
+        menu.style.display = 'none';
+        menuButton.addEventListener('click', () => {
+            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+           // menuButton.textContent = menu.style.display === 'block' ? 'Hide Menu' : '';
+            menuButton.innerHTML=`<button><img src="../assets/picture/th-menu-128.webp"></button>`  
+            
+        });
+    </script>
+   
+</body>
+</html>
