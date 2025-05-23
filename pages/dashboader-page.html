@@ -43,7 +43,9 @@
         menu.style.display = 'none';
         menuButton.addEventListener('click', () => {
             menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-            menuButton.textContent = menu.style.display === 'block' ? 'Hide Menu' : '';
+           // menuButton.textContent = menu.style.display === 'block' ? 'Hide Menu' : '';
+            menuButton.innerHTML=`<button><img src="../assets/picture/th-menu-128.webp"></button>`  
+            
         });
     </script>
    

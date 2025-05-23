@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+               background-image: linear-gradient(to right, rgb(15, 224, 210), rgb(83, 8, 168));
+
+
+        }
+        .WELCOM{
+            position: absolute;
+            justify-content: center;
+            text-align: center;
+            font-size: 40px;
+            left: 25%;
+            top: 40%;
+        }
+
+ @keyframes spin { 
+         0% { transform: rotate(0deg);} 
+        100% { transform: rotate(360deg);} 
+    } 
+
+    #style{
+                    border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+            }
+    </style>
+</head>
+<body>
+<div class="WELCOM">
+    <strong>
+
+    <p><strong>YOUR WELCOM for PhantomByte</strong></p>
+        
+<div id="loading-spinner" style="display:none;">
+    <div id="style"></div>
+</div>
+<button id="myButton" style="padding: 12px 28px; font-size: 18px; border-radius: 8px; border: none; background: #3498db; color: #fff; cursor: pointer;">
+    CONTINUE
+</button>
+
+        </div>
+        
+    </strong>
+    </div>
+
+
+
+<script>
+    document.getElementById('myButton').addEventListener('click', function() {
+
+        document.getElementById('loading-spinner').style.display = 'block';
+        this.disabled = true;
+
+        setTimeout(function() {
+            window.location.href = 'pages/home-page.html';
+        }, 9000);
+    });
+
+    window.addEventListener('load', function() {
+        document.getElementById('loading-spinner').style.display = 'none';
+    });
+</script>
+
+</body>
+</html>

@@ -1,7 +1,9 @@
-body{
-    background-image: linear-gradient(to right, rgb(202, 194, 194), rgb(145, 142, 142));
 
-}
+        body{
+               background-image: linear-gradient(to right, rgb(15, 224, 210), rgb(83, 8, 168));
+
+
+        }
 
 nav a{
     text-decoration: none;
