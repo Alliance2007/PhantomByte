@@ -1,9 +1,11 @@
 
-        body{
-               background-image: linear-gradient(to right, rgb(15, 224, 210), rgb(83, 8, 168));
+    @media screen and (max-width: 168px) {
+    body {
+        background-image: linear-gradient(to right, rgb(15, 224, 210), rgb(83, 8, 168));
+    }
+    
+}
 
-
-        }
 
 img{
     position: relative;
@@ -14,7 +16,7 @@ img{
 nav{
     position: absolute;
     top: 15%;
-    left: 39%;
+    left: 29%;
     width: 10px;
     height: 10%;
     display: flex;

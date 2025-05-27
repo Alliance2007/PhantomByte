@@ -3,4 +3,20 @@
                background-image: linear-gradient(to right, rgb(15, 224, 210), rgb(83, 8, 168));
 
 
+        
+            
+        }
+        #menuToggle img{
+            top: 4%;
+        }
+
+        .span2 p{
+            position: absolute;
+            justify-content: center;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 40px;
+            top: 5%;
+            left: 30%;
+
         }

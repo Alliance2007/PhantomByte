@@ -1,4 +1,9 @@
-
+  @media screen and (max-width: 168px) {
+    body {
+        background-image: linear-gradient(to right, rgb(15, 224, 210), rgb(83, 8, 168));
+    }
+    
+  }
 
         body{
                background-image: linear-gradient(to right, rgb(15, 224, 210), rgb(83, 8, 168));
@@ -80,7 +85,7 @@ input{
     
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 40px;
     font-size: 16px;
 
 }
@@ -104,7 +109,7 @@ button{
     opacity: 80%;
 }
 .nav{
-    margin-left: 1000px;
+    margin-left: 100px;
     position: fixed;
     top: 100px;
 }
@@ -149,7 +154,7 @@ nav a{
     color: black;
 }
 .header nav a:hover {
-    color: white;
+    /* color: white; */
     text-decoration: overline;
 }
 .header nav a.active {
@@ -176,4 +181,11 @@ nav a{
     text-align: center;
 
 
+}
+
+a{
+    position: absolute;
+    top: 73%;
+    left: 40%;
+    font-size: 0px;
 }

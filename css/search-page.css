@@ -1,0 +1,13 @@
+@media screen and (max-width: 168px) {
+    body {
+        background-image: linear-gradient(to right, rgb(15, 224, 210), rgb(83, 8, 168));
+    }
+    
+}
+  body {
+        background-image: linear-gradient(to right, rgb(15, 224, 210), rgb(83, 8, 168));
+    }
+  h1{
+    
+  }
+
